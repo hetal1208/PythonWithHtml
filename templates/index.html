@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Flask Illustration</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+</head>
+<body>
+    <div class = "container"> 
+        <h1> WELCOME, {{name}}!</h1>
+        <p> This is an exaple of Python with HTML and CSS using flask</p>
+    </div>
+    <div class = "container"> 
+        <form method="post" action="/submit">
+             <input type="text" name="username" placeholder="Username" required> <br>
+             <input type="password" name="password" placeholder="password" required>
+        <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
